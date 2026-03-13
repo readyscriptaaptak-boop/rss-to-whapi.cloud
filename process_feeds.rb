@@ -157,5 +157,6 @@ feeds.each do |feed|
     feed['seen'] << oldest_item[:guid] unless feed['seen'].include?(oldest_item[:guid])
   end
 end
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 save_feeds(feeds)
