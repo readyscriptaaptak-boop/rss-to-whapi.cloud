@@ -3,7 +3,7 @@ name: Process feeds
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   process:
@@ -66,3 +66,4 @@ jobs:
           git add feeds.json
           git commit -m "Update feeds.json with processed items"
           git push
+
